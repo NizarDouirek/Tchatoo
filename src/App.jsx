@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from "react";
+import logoSrc from "./assets/logo.png";
 const STORAGE_KEY = "groq_conversations";
 const MODEL = "llama-3.3-70b-versatile";
 
@@ -176,7 +177,7 @@ const RefreshIcon = ({ color = "currentColor" }) => (
 // ── TchatooLogo SVG ──────────────────────────────────────────────────────────
 const TchatooLogo = ({ size = 28 }) => (
  <img 
-    src="/src/assets/logo.png" 
+    src={logoSrc}
     alt="Logo Tchatoo" 
     width={size} 
     height={size} 
